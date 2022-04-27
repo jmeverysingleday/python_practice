@@ -17,6 +17,7 @@ while True:
     if menu_list_set == new_menu_list_set:
         del menu_list[-1]
         print("이미 있는 메뉴예요! 다른 메뉴를 입력해주세요.")
+        print("현재 메뉴 수 = ", len(menu_list))
         print()
 
     else:
@@ -43,4 +44,4 @@ for second in [3,2,1]:
 print()
 
 choice = random.choice(menu_list)
-print("오늘의 메뉴는 ", menu_list.index(choice), "번째 메뉴, ", choice, "입니다.")
+print("오늘의 메뉴는 ", menu_list.index(choice)+1, "번째 메뉴, ", choice, "입니다.")
